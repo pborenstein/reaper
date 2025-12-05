@@ -5,11 +5,14 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "reddit-reaper"
 version = "0.1.0"
-description = "CLI tool to retrieve Reddit user information"
-requires-python = ">=3.8"
+description = "CLI tool to retrieve your own Reddit content for repurposing"
+requires-python = ">=3.9"
 dependencies = [
-    "requests>=2.31.0",
+    "praw>=7.7.1",
 ]
 
 [project.scripts]
 reddit-reaper = "reddit_reaper.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

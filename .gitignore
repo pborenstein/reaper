@@ -21,3 +21,10 @@ wheels/
 venv/
 env/
 .venv/
+
+# Config with credentials
+config.json
+
+# uv
+.venv/
+uv.lock
