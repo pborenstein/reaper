@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reddit-reaper"
+version = "0.1.0"
+description = "CLI tool to retrieve Reddit user information"
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+reddit-reaper = "reddit_reaper.cli:main"
